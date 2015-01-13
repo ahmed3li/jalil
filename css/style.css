@@ -1,0 +1,325 @@
+section{
+    padding: 90px 0;
+    position: relative;
+}
+.section-title{
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    /* color: #000; */
+}
+#teamwork .section-title, #teamwork .section-description{
+    color:#fff;
+}
+.section-description{
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+#header{
+    background: #000;
+    position: relative;
+    padding: 20px 0 0;
+    min-height: 768px;
+}
+#header .navbar-nav>li{
+    background: url(../img/sep.png) no-repeat center left;
+}
+#header .navbar-nav>li:first-child{
+    background: transparent;
+}
+#header .navbar-nav>li>a{
+    color: #f9f9f9;
+}
+#header .navbar-nav>li>a:hover{
+    color: #ccc;
+}
+#header .navbar-brand{
+    color: #fff;
+}
+#header h1, #header p{
+    color:#fff;
+}
+#header h1{
+    text-align: center;
+    margin: 180px 0 10px 0;
+    font-size: 56px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+#header .more{
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+/*----------------------------------------------------------------------------*\
+    Headhesive Specific Styles
+/*----------------------------------------------------------------------------*/
+.banner--clone {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Additional styles */
+    background: #000;
+
+    /* Translate -100% to move off screen */
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+
+    /* Animations */
+    -webkit-transition: all 300ms ease-in-out;
+       -moz-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+
+    z-index: 999;
+    width: 100%;
+    padding: 15px 0;
+}
+.banner--stick {
+
+    /* Translate back to 0%; */
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+}
+.banner--unstick {
+    /* Not required to use, but could be useful to have */
+}
+.topnav nav{
+    margin-bottom: 0;
+}
+.topnav .navbar-nav>li{
+    background: url(../img/sep.png) no-repeat center left;
+}
+.topnav .navbar-nav>li:first-child{
+    background: transparent;
+}
+.topnav .navbar-nav>li>a{
+    color: #f9f9f9;
+}
+.topnav .navbar-nav>li>a:hover{
+    color: #ccc;
+}
+.topnav .navbar-brand{
+    color: #fff;
+}
+
+#services{
+    background: #fff;
+}
+.service-item{
+    text-align: center;
+}
+.service-item img{
+    width: 80px;
+    
+    height: 80px;
+    margin-bottom: 20px;
+}
+.service-item h2{
+    margin: 0 0 15px;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;    
+}
+.service-item p{
+    margin: 0 0 0 0;
+    font-weight: 100;
+    text-transform: uppercase;     
+    font-size: 16px;
+}
+#quote{
+    background: #000;
+}
+.quote-title{
+    color:#fff;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+.quote-say{
+    color:#fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 0 0;
+    text-align: center;
+    line-height: 1;
+}
+#portfolio{
+    background: #fff;
+}
+.portfolio-item{
+    border: 20px solid #000;   
+    margin: 0 0 30px;
+    height: auto;
+    position: relative;
+}
+.portfolio-item-overlay{
+    opacity: 0;
+    -webkit-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+.portfolio-item:hover .portfolio-item-overlay{
+    opacity: 1;
+}
+.portfolio-item-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+}
+.portfolio-item-preview{
+    right: 50%;
+    margin-right: -55px;
+}
+.portfolio-item-link{
+    left: 50%;
+    margin-left: -55px;  
+}
+.overlay-link{
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 30px;
+    color:#fff; 
+    display: inline-block;
+    line-height: 48px;
+    border: 3px solid transparent;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.overlay-link:hover{
+    color: #fff;
+    border: 3px solid #fff;
+    font-size: 22px;
+    line-height: 44px;
+}
+#portfolio-items{}
+#portfolio-items .item{
+  margin: 15px;
+}
+#portfolio-items .item img{
+}
+
+
+
+#teamwork{
+    background: #000;    
+}
+#teammembers .item{
+  margin: 15px;
+}
+#teammembers .item img{
+    display: block;
+    border-radius: 100%;
+    margin: 0 auto 15px;
+    height: 157px;
+    width: 157px;
+    border: 1px solid transparent;
+    -webkit-transition: all .25s ease-in;
+    -o-transition: all .25s ease-in;
+    transition: all .25s ease-in;    
+}
+#teammembers .item:hover img{
+    border: 1px solid #fff;
+}
+#teammembers .item h3{
+    margin: 0 0 0 0;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    font-size: 26px;
+}
+#teammembers .item p{
+    margin: 0 0 0 0;
+    color: #fff;    
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+}
+#teammembers .owl-prev{
+    left: -50px;
+    position: absolute;
+    top: 40%;
+  
+}
+#teammembers .owl-next{
+    right: -50px;
+    position: absolute;
+    top: 40%;
+}
+#teammembers .item:hover .social-icons{
+    opacity: 1;
+}
+.social-icons{
+    opacity: 0;
+    margin-top: 10px;
+    text-align: center;
+    -webkit-transition: all .25s ease-in;
+    -o-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+}
+.social-icons a:first-child{
+    margin-left: 0;
+}
+.social-icons a{
+    color: #f9f9f9;
+    margin-left: 15px;
+    display: inline-block;
+}
+.social-icons a:hover{
+    color: #ccc;
+}
+#contact{
+    background: #fff;
+}
+.contact-input{
+    border: 10px solid #000 !important;
+    margin-bottom: 15px;
+    border-radius: 0 !important;
+    font-size: 18px !important;
+    padding: 20px 15px !important;    
+    font-weight: 100;
+}
+.contact-submit{
+    border: 10px solid transparent !important;
+    margin-bottom: 15px;
+    border-radius: 0 !important;
+    font-size: 16px;
+    padding: 10px 30px !important;
+    font-weight: 600;
+    background: #000;
+    color: #fff !important;
+}
+.contact-submit:hover{
+    color: #000 !important;
+    border: 10px solid #000 !important;
+    background: #fff;
+}
+
+#footer{
+    background: #000;
+    position: relative;
+    padding: 15px 0;
+}
+#footer p{
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
