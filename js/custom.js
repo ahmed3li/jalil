@@ -78,3 +78,17 @@ var banner = new Headhesive('.topnav', options);
 //                                    // the browser's width is less than 600, the fallback will kick in.
 //   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
 //});
+
+jQuery(document).ready(function($) {
+    $('a[href^="#"]').bind('click.smoothscroll',function (e) {
+        e.preventDefault();
+        var target = this.hash,
+        $target = $(target);
+
+        $('html, body').stop().animate( {
+            'scrollTop': $target.offset().top-40
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        } );
+    } );
+} );
